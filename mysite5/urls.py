@@ -14,7 +14,7 @@ Including another URLconf
     1. Import the include() function: from django.conf.urls import url, include
     2. Add a URL to urlpatterns:  url(r'^blog/', include('blog.urls'))  修改一下
 """
-from django.conf.urls import url
+from django.conf.urls import url,include
 from django.contrib import admin
 from mysite5.view import hello, curr_datetime, hours_ahead
 
@@ -23,4 +23,5 @@ urlpatterns = [
     url(r'^hello/$', hello),
     url(r'^time/$', curr_datetime),
     url(r'^time/plus/(\d{1,2})/$', hours_ahead),
+    url(r'^books/', include('books.urls')),
 ]

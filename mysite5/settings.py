@@ -54,11 +54,12 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'mysite5.urls'
-
+print __file__
+print os.path.join(os.path.dirname(os.path.dirname(__file__)), 'templates').replace('\\','/')
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(os.path.dirname(__file__), 'templates').replace('\\','/'),]
+        'DIRS': [os.path.join(os.path.dirname(os.path.dirname(__file__)), 'templates').replace('\\','/'),]
         ,
         'APP_DIRS': True,
         'OPTIONS': {
