@@ -1,4 +1,4 @@
-这是 The Django Book 中文版的随书CODE,是本人学习的学习过程，
+这是 The Django Book 中文版自己的随书CODE,也是本人学习的学习过程，
 由于第一次使用Github,可能有不规范，对访问者产生的困扰还望谅解。<br>
 <br>
 The Django Book 中文版：http://djangobook.py3k.cn/2.0/<br>
@@ -25,9 +25,20 @@ The Django Book 中文版：http://djangobook.py3k.cn/2.0/<br>
     python manage.py makemigrations rango  更改模型，修改数据库，产生migrations   第一步<br>
     python manage.py migrate  将生成的migrations执行到目的数据库                         第二步<br>
     python manage.py createsuperuser  创建管理员,用以登陆后台admin<br>
-<br>
     pip freeze > requirements.txt    生成环境配置文件<br>
     pip install -r requirements.txt  根据文件安装配置<br>
+<br>
 4、测试数据库是否连接正常<br>
     from django.db import connection<br>
     cursor = connection.cursor()  没有错误返回则正常<br>
+<br>
+5、HttpRequest对象包含当前请求URL的一些信息：<br>
+request.path 除域名以外的请求路径，以正斜杠开头 "/hello/"<br>
+request.get_host() 主机名（比如，通常所说的域名） "127.0.0.1:8000"or"www.example.com"<br>
+request.get_full_path()请求路径，可能包含查询字符串 "/hello/?print=true"<br>
+request.is_secure() 如果通过HTTPS访问，则此方法返回True， 否则返回False True或者 False<br>
+有关request的其它信息：<br>
+request.META 是一个Python字典，包含了所有本次HTTP请求的Header信息<br>
+HTTP_REFERER，进站前链接网页，如果有的话。 （请注意，它是REFERRER的笔误。）
+HTTP_USER_AGENT，用户浏览器的user-agent字符串，如果有的话。 例如："Mozilla/5.0 (X11; U; Linux i686; fr‐FR; rv:1.8.1.17) Gecko/20080829 Firefox/2.0.0.17".
+REMOTE_ADDR客户端IP，如："12.345.67.89"。(如果申请是经过代理服务器的话，那么它可能是以逗号分割的多个IP地址，如："12.345.67.89,23.456.78.90"。)
