@@ -6,3 +6,5 @@
 1、书中提供的MySQLdb的驱动地址：http://www.djangoproject.com/r/python-mysql，这里只能下载到WIN32的驱动，
 如果是64位系统，需要另外自己去找64位的驱动，百度MySQL-python-1.2.3.win-amd64-py2.7.exe，可以下载。这里直接
 使用pip install mysql-python,会报错的；所以选择下载单独程序做安装。<br>
+2、版本问题，非常要注意书籍所使用软件的版本问题；本书使用的是1.1版，我使用的是1.10版，所以这会给后面的学习带来
+很多的麻烦。
