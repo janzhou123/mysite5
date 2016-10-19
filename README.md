@@ -5,10 +5,11 @@ The Django Book 中文版：http://djangobook.py3k.cn/2.0/<br>
 我现在看的是一个2.3M的PDF文件，名字是：Django_中文教程.pdf，我会以看到此PDF哪一页提交代码，以备自己后面查看<br>
 <br>
 在随书CODING过程中，我会记录一些问题，以及解决方法在这里；还有一些自己觉值得记录的东西<br>
+### 2016-10-19<br />
 2016-10-19<br>
 1、书中提供的MySQLdb的驱动地址：http://www.djangoproject.com/r/python-mysql
     这里只能下载到WIN32的驱动，如果是64位系统，需要另外自己去找64位的驱动，百度MySQL-python-1.2.3.win-amd64-py2.7.exe，可以下载。这里直接
-    使用pip install mysql-python,会报错的；所以选择下载单独程序做安装。另外如果想在venv中安装MySqldb,pip不成功的话，可以直接将安装成功的<br>
+    使用pip install mysql-python,会报错的；所以选择下载单独程序做安装。另外如果想在venv中安装MySqldb,pip不成功的话，可以直接将安装成功的
     文件拷贝到venv目录中，可以使用pip uninstall mysql-python获得需要拷贝的文件清单<br>
 <br>
 2、Django版本问题，非常要注意书籍所使用软件的版本问题；本书使用的是1.1版，我使用的是1.10版，所以这会给后面的学习带来
