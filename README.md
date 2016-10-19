@@ -25,3 +25,6 @@ python manage.py validate              命令验证模型的有效性(这个命�
 python manage.py makemigrations rango  更改模型，修改数据库，产生migrations   第一步<br>
 python manage.py migrate  将生成的migrations执行到目的数据库                         第二步<br>
 python manage.py createsuperuser  创建管理员,用以登陆后台admin<br>
+<br>
+pip freeze > requirements.txt    生成环境配置文件<br>
+pip install -r requirements.txt  根据文件安装配置<br>
