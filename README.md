@@ -2,6 +2,7 @@
 由于第一次使用Github,可能有不规范，对访问者产生的困扰还望谅解。<br>
 <br>
 The Django Book 中文版：http://djangobook.py3k.cn/2.0/<br>
+我现在看的是一个2.3M的PDF文件，名字是：Django_中文教程.pdf，我会以看到此PDF哪一页提交代码，以备自己后面查看<br>
 <br>
 在随书CODING过程中，我会记录一些问题，以及解决方法在这里<br>
 2016-10-19<br>
